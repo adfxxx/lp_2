@@ -50,15 +50,15 @@ all_situations([A,B,V,G,D,E]) :-
 	Positions = ["Chairman", "Vice", "Secretary", "Citizen", "Citizen", "Citizen"],
 	permutation([A,B,V,G,D,E], Positions),
 	situation_1(A,B,V,G,D,E),
-    situation_2(A,B,V,G,D,E),
-    situation_3(A,B,V,G,D,E),
-    situation_4(A,B,V,G,D,E),
-    situation_5(A,B,V,G,D,E),
-    situation_6(A,B,V,G,D,E),
-    situation_7(A,B,V,G,D,E),
-    situation_8(A,B,V,G,D,E),
-    situation_9(A,B,V,G,D,E),
-    situation_10(A,B,V,G,D,E).
+	situation_2(A,B,V,G,D,E),
+	situation_3(A,B,V,G,D,E),
+	situation_4(A,B,V,G,D,E),
+	situation_5(A,B,V,G,D,E),
+	situation_6(A,B,V,G,D,E),
+	situation_7(A,B,V,G,D,E),
+	situation_8(A,B,V,G,D,E),
+	situation_9(A,B,V,G,D,E),
+	situation_10(A,B,V,G,D,E).
 	
 solve() :- 
 	setof([A,B,V,G,D,E], all_situations([A,B,V,G,D,E]), [[T,U,W,X,Y,Z]]),
